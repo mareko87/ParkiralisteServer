@@ -5,6 +5,7 @@
  */
 package db;
 
+import db.connection.DBConnectionDefaults;
 import domain.AbstractDomainObject;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -29,17 +30,22 @@ public class DBBroker {
     public static String password;
 
     private DBBroker() {
+        jdbc = DBConnectionDefaults.JDBC;
+        localhost = DBConnectionDefaults.LOCALHOST;
+        dbName = DBConnectionDefaults.DB_NAME;
+        username = DBConnectionDefaults.USERNAME;
+        password = DBConnectionDefaults.PASSWORD;
         try {
-//            System.out.println("DBBroker constructor: connection = DriverManager.getConnection(jdbc:" +
-//                    jdbc + "://localhost:" + localhost + "/" + dbName + ", username, password);" );
-//            
-//            connection
-//                    = DriverManager.getConnection("jdbc:" + jdbc + 
-//                            "://localhost:" + localhost +
-//                            "/" + dbName, 
-//                            username, password);
+            System.out.println("DBBroker constructor: connection = DriverManager.getConnection(jdbc:" +
+                    jdbc + "://localhost:" + localhost + "/" + dbName + ", username, password);" );
+            
+            connection
+                    = DriverManager.getConnection("jdbc:" + jdbc + 
+                            "://localhost:" + localhost +
+                            "/" + dbName, 
+                            username, password);
 
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/parkiraliste", "root", "root");
+//            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/parkiraliste", "root", "root");
             connection.setAutoCommit(false);
         } catch (SQLException ex) {
             ex.printStackTrace();

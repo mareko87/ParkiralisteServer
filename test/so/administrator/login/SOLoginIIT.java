@@ -4,13 +4,11 @@
  */
 package so.administrator.login;
 
+import db.DBBroker;
 import domain.AbstractDomainObject;
 import domain.Administrator;
-import java.sql.SQLException;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -50,9 +48,9 @@ public class SOLoginIIT {
 
     /**
      * Test of execute method, of class SOLogin.
-     * @throws Exception expectedly
+     * @throws Exception is not expected
      */
-    @Test (expected = Exception.class)
+    @Test
     public void testExecutePogresniKredencijali() throws Exception {
         System.out.println("executePogresniKredencijali");
 
@@ -62,11 +60,14 @@ public class SOLoginIIT {
         System.out.println("Korisnicko ime: " + admin.getKorisnickoIme() + ", Lozinka: " + admin.getLozinka());
 
         instance.execute(admin);
+        
+        Administrator ulogovani = instance.getAdministrator();
+        assertNull(ulogovani);
     }
     
      /**
      * Test of execute method, of class SOLogin.
-     * @throws Exception expectedly
+     * @throws Exception is not expected
      */
     @Test
     public void testExecuteTacniKredencijali() throws Exception {

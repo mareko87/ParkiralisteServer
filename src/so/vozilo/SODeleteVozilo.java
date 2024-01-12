@@ -13,7 +13,7 @@ import so.AbstractSO;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class SODeleteVozilo extends AbstractSO{
 

@@ -8,13 +8,12 @@ package so.organizacija;
 import db.DBBroker;
 import domain.AbstractDomainObject;
 import domain.Organizacija;
-import domain.Vozilo;
 import java.sql.SQLException;
 import so.AbstractSO;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class SODeleteOrganizacija extends AbstractSO{
 

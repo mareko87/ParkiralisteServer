@@ -12,7 +12,7 @@ import java.sql.SQLException;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public abstract class AbstractSO {
     

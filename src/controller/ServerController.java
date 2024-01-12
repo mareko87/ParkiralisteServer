@@ -32,7 +32,7 @@ import so.vozilo.SOGetAllVozilo;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class ServerController {
 

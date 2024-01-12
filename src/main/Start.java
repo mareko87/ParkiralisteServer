@@ -9,7 +9,7 @@ import form.DBConnectionForm;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class Start {
     

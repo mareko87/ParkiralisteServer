@@ -8,15 +8,13 @@ package so.vozilo;
 import db.DBBroker;
 import domain.AbstractDomainObject;
 import domain.Vozilo;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import so.AbstractSO;
 
 /**
  *
- * @author 38160
+ * @author Marko Milosevic
  */
 public class SOGetAllVozilo extends AbstractSO {
     

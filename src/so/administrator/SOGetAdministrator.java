@@ -8,14 +8,13 @@ package so.administrator;
 import db.DBBroker;
 import domain.AbstractDomainObject;
 import domain.Administrator;
-import domain.Organizacija;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import so.AbstractSO;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class SOGetAdministrator extends AbstractSO{
     

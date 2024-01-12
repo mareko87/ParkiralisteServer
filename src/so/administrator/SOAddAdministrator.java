@@ -10,12 +10,11 @@ import domain.AbstractDomainObject;
 import domain.Administrator;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import javax.swing.JOptionPane;
 import so.AbstractSO;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class SOAddAdministrator extends AbstractSO {
 

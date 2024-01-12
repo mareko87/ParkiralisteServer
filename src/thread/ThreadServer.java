@@ -7,8 +7,6 @@ package thread;
 
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  *

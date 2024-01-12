@@ -20,7 +20,7 @@ import transfer.util.ResponseStatus;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class ThreadClient extends Thread {
 

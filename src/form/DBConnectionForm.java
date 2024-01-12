@@ -9,12 +9,11 @@ import db.DBBroker;
 import java.awt.event.KeyEvent;
 import java.sql.Connection;
 import javax.swing.JOptionPane;
-import main.Start;
 import db.connection.DBConnectionDefaults;
 
 /**
  *
- * @author marek
+ * @author Marko Milosevic
  */
 public class DBConnectionForm extends javax.swing.JFrame {
     

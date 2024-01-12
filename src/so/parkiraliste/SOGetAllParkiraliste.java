@@ -8,15 +8,13 @@ package so.parkiraliste;
 import db.DBBroker;
 import domain.AbstractDomainObject;
 import domain.Parkiraliste;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import so.AbstractSO;
 
 /**
  *
- * @author marek
+ * @Marko Milosevic
  */
 public class SOGetAllParkiraliste extends AbstractSO {
     

@@ -7,17 +7,14 @@ package so.organizacija;
 
 import db.DBBroker;
 import domain.AbstractDomainObject;
-import domain.Administrator;
 import domain.Organizacija;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import so.AbstractSO;
 
 /**
  *
- * @author 38160
+ * @author Marko Milosevic
  */
 public class SOGetAllOrganizacija extends AbstractSO {
     

@@ -1,0 +1,2 @@
+# ParkiralisteServer
+Parkiraliste klijent - server

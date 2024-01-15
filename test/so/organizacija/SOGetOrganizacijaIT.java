@@ -59,5 +59,4 @@ public class SOGetOrganizacijaIT {
         assertEquals(o.getNaziv(), instance.getOrganizacija().getNaziv());
         assertEquals(o.getAdresa(), instance.getOrganizacija().getAdresa());
     }
- 
 }

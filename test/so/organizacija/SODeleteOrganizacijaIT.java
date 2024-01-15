@@ -66,5 +66,4 @@ public class SODeleteOrganizacijaIT {
         }
         assertNull(o);
     }
-    
 }

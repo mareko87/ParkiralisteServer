@@ -56,7 +56,4 @@ public class SOGetAllOrganizacijaIT {
         
         assertEquals(true, lista.size() > 0);
     }
-
-   
-    
 }

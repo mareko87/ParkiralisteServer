@@ -37,7 +37,6 @@ public class SOAddOrganizacijaIT {
         vozila.add(new Vozilo(organizacija, "BG-3578-KK", "Toyota Corolla"));
         
         organizacija.setVozila(vozila);
-
     }
     
     @After
@@ -59,6 +58,7 @@ public class SOAddOrganizacijaIT {
 
     /**
      * Test of execute method, of class SOAddOrganizacija.
+     * @throws Exception is not expected
      */
     @Test
     public void testExecute() throws Exception {
@@ -79,5 +79,4 @@ public class SOAddOrganizacijaIT {
         assertEquals(organizacija.getNaziv(), o.getNaziv());
         assertEquals(organizacija.getAdresa(), o.getAdresa());
     }
-    
 }

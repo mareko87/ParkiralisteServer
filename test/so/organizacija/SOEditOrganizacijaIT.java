@@ -6,13 +6,10 @@ package so.organizacija;
 
 import db.DBBroker;
 import domain.AbstractDomainObject;
-import domain.Administrator;
 import domain.Organizacija;
 import domain.Vozilo;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -83,5 +80,4 @@ public class SOEditOrganizacijaIT {
             assertEquals(org.getNaziv(), o.getNaziv());
             assertEquals(org.getAdresa(), o.getAdresa());
     }
-    
 }

@@ -29,14 +29,8 @@ public class SOEditOrganizacijaIT {
     @Before
     public void setUp() {
         instance = new SOEditOrganizacija();
-        ArrayList<Vozilo> vozila = new ArrayList<>();
-        try {
-            vozila = (ArrayList<Vozilo>)(ArrayList<?>)DBBroker.getInstance().select(new Vozilo());
-        } catch (SQLException ex) {
-            System.err.println("Greska prilikom ucitavanja vozila: " + ex.getMessage());
-        }
-        org = new Organizacija(2L, "Gigatron", "Kraljice Marije 20", vozila);
-        
+        org = new Organizacija(2L, "Gigatron", "Kraljice Marije 20", null);
+        org.setAdresa("Avalska 10");
     }
     
     @After
@@ -76,8 +70,9 @@ public class SOEditOrganizacijaIT {
                 break;
             }
         }
-            assertNotNull(o);
-            assertEquals(org.getNaziv(), o.getNaziv());
-            assertEquals(org.getAdresa(), o.getAdresa());
+
+        assertNotNull(o);
+        assertEquals(org.getNaziv(), o.getNaziv());
+        assertEquals(org.getAdresa(), o.getAdresa());
     }
 }

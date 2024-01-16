@@ -72,5 +72,4 @@ public class SOAddVoziloIT {
         assertNotNull(v);
         assertEquals(voz.getRegistarskiBroj(), v.getRegistarskiBroj());
     }
-    
 }

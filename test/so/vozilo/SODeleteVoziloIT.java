@@ -79,5 +79,4 @@ public class SODeleteVoziloIT {
         }
         assertNull(v);
     }
-    
 }
